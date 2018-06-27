@@ -1,0 +1,21 @@
+group 'elasticsearch-tests'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile 'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.2.4'
+    compile 'com.github.javafaker:javafaker:0.15'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.5'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.9.5'
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
